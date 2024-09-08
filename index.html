@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Animated Resume Builder</h1>
+    <form id="resumeForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="title">Job Title</label>
+        <input type="text" id="title" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="github">GitHub</label>
+        <input type="url" id="github" required>
+      </div>
+      <div class="form-group">
+        <label for="portfolio">Portfolio</label>
+        <input type="url" id="portfolio" required>
+      </div>
+      <div class="form-group">
+        <label for="education">Education</label>
+        <input type="text" id="education" required>
+      </div>
+      <div class="form-group">
+        <label for="currentYear">Current Status</label>
+        <input type="text" id="currentYear" required>
+      </div>
+      <div class="form-group">
+        <label for="skills">Skills (comma-separated)</label>
+        <input type="text" id="skills" required>
+      </div>
+      <div class="form-group">
+        <label for="projects">Projects (comma-separated)</label>
+        <input type="text" id="projects" required>
+      </div>
+      <div class="form-group">
+        <label for="achievements">Achievements (comma-separated)</label>
+        <input type="text" id="achievements" required>
+      </div>
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resumeContainer" class="resume-container animated"></div>
+
+  </div>
+
+  <script src="main.ts" defer></script>
+</body>
+</html>
