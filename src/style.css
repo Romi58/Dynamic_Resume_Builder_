@@ -1,0 +1,274 @@
+/* Reset and Body Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;  /* Light grey background */
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #ffffff;  /* White background for the main content */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border: 1px solid #e2e2e2; /* Subtle border */
+}
+
+/* Header Section */
+.head {
+  text-align: center;
+  font-size: 48px;
+  color: #2c3e50; /* Darker shade for header */
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Form Section */
+form div {
+  margin-bottom: 15px;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color: #3498db; /* Blue color for the legend */
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Textarea */
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  padding: 14px 30px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Resume Section */
+#resume {
+  width: 100%;
+}
+
+.headResume {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main Resume Layout */
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* Left Side - Personal Info */
+.first-part {
+  width: 300px;
+  padding: 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.first-part img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.first-part h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.first-part p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Info Sections */
+.info,
+.details1 {
+  padding-left: 20px;
+}
+
+.info h4,
+.details1 h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #3498db;
+}
+
+.info p,
+.details1 p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Right Side - Work Experience, Skills, etc. */
+.second-part {
+  width: 580px;
+  background-color: #ecf0f1;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.second-part .h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #3498db;
+  margin-bottom: 30px;
+}
+
+.details {
+  margin-top: 20px;
+}
+
+.details h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.details p {
+  font-size: 16px;
+  margin-left: 20px;
+  color: #7f8c8d;
+}
+
+.details ul {
+  margin-left: 40px;
+  list-style-type: circle;
+}
+
+/* Button Section */
+.button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background-color: #fff;
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0;
+    padding: 40px;
+  }
+
+  .first-part {
+    background-color: #3498db;
+  }
+
+  .second-part {
+    background-color: #ecf0f1;
+  }
+}

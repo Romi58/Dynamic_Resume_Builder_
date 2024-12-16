@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",             // Make sure to target ES2015 or later
+    "module": "commonjs",           // Module system, commonjs for Node.js
+    "lib": ["DOM", "ES2015"],       // Include ES2015 library for Promise and other modern features
+    "strict": true,                 // Enable all strict type-checking options
+    "outDir": "./dist",             // Specify output directory
+    "rootDir": "./src",             // Specify input directory for TypeScript files
+    "esModuleInterop": true,        // Enable interop between CommonJS and ESModules
+    "skipLibCheck": true            // Skip type checking for declaration files
+  },
+  "include": ["src/**/*"],          // Include all .ts files in the src folder
+  "exclude": ["node_modules", "dist"] // Exclude node_modules and dist folder
+}
+
